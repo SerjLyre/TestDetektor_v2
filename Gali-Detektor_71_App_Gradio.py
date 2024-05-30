@@ -15,6 +15,6 @@ def classify_image(img):
 
 image = gr.Image(height=192, width=192)
 label = gr.Label()
-examples = ['71_examples\\Gali.jpg', '71_examples\\FastGali.jpg', '71_examples\\NichtGali.jpg']
+examples = ['71_examples\\NichtGali.jpg', '71_examples\\NichtGali2.jpg', '71_examples\\NichtGali3.jpg']
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples, title="Gali Detektor")
 intf.launch(inline=False)
